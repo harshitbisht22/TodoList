@@ -1,0 +1,110 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+
+body {
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideInDown 1s;
+  color: #E7E9BB;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  animation: slideInUp 1s;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  margin-right: 1rem;
+  animation: fadeIn 1s;
+  color: #000000;
+}
+
+button[type="submit"],
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #636363;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: fadeIn 1s;
+}
+
+button[type="submit"]:hover,
+button:hover {
+  background-color: #a2ab58;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  animation: fadeIn 1s;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  background-color: #E7E9BB;
+  animation: slideInLeft 1s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
